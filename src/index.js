@@ -1,8 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App'
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import App from "./App";
+import MarkdownPage from "./MarkdownPage";
+import "./index.css";
 
-ReactDOM.render(<App />,
-  document.getElementById('root')
+const router = (
+  <Router>
+    <Route basename="/">
+      <Route path="/" component={App} exact />
+      <Route path="/markdown" component={MarkdownPage} />
+    </Route>
+  </Router>
 );
+
+ReactDOM.render(router, document.getElementById("root"));
