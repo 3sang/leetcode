@@ -3,7 +3,7 @@
  * Author       : Saraku.
  * Date         : 2021-05-21 20:16:44
  * LastEditors  : Saraku.
- * LastEditTime : 2021-05-23 00:24:02
+ * LastEditTime : 2021-05-23 10:35:49
  */
 
 import React,{useState} from "react";
@@ -36,19 +36,20 @@ function App() {
           >
             <Menu.Item key="default">首页说明</Menu.Item>
             <SubMenu key="list" title="链表">
-              <Menu.Item key="list-1">首页</Menu.Item>
+              <Menu.Item key="list-0">首页</Menu.Item>
             </SubMenu>
             <SubMenu key="array" title="数组">
-              <Menu.Item key="array-1">首页</Menu.Item>
+              <Menu.Item key="array-0">首页</Menu.Item>
+              <Menu.Item key="array-1">只出现过一次的数</Menu.Item>
             </SubMenu>
             <SubMenu key="tree" title="树">
-              <Menu.Item key="tree-1">首页</Menu.Item>
+              <Menu.Item key="tree-0">首页</Menu.Item>
             </SubMenu>
             <SubMenu key="stack" title="栈">
-              <Menu.Item key="stack-1">首页</Menu.Item>
+              <Menu.Item key="stack-0">首页</Menu.Item>
             </SubMenu>
             <SubMenu key="queue" title="队列">
-              <Menu.Item key="queue-1">首页</Menu.Item>
+              <Menu.Item key="queue-0">首页</Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>
@@ -62,6 +63,7 @@ function App() {
             }}
           >
             <div
+            className={styles.mdPage}
               dangerouslySetInnerHTML={{
                 __html: MarkdownContent.render(currentMd),
               }}

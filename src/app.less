@@ -1,7 +1,31 @@
 .default{
-  height: 100%;
+  min-height: 100%;
 }
 
 .layout{
-  height: 100%;
+  min-height: 100vh;
+}
+
+.mdPage pre{
+  display: block;
+    padding: 20px;
+    line-height: 28px;
+    word-break: break-word;
+}
+
+.mdPage pre code,.mdPage pre{
+  background-color: #eee;
+  font-size: 14px;
+  border-radius: 2px;
+  overflow-x: auto;
+}
+
+.mdPage blockquote {
+  position: relative;
+  margin: 16px 0;
+  padding: 5px 8px 5px 30px;
+  background: none repeat scroll 0 0 rgba(102,128,153,.05);
+  border: none;
+  color: #333;
+  border-left: 10px solid #cdd2d6;
 }
