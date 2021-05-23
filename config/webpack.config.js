@@ -112,7 +112,29 @@ module.exports = function (webpackEnv) {
       },
       {
         loader: require.resolve("css-loader"),
-        options: cssOptions,
+        options: {
+          ...cssOptions,
+          modules: {
+            localIdentName: "[path][name]-[local]",
+            getLocalIdent: (context, localIdentName, localName, options) => {
+              if (
+                context.resourcePath.includes('node_modules') ||
+                context.resourcePath.includes('ant.design.pro.less')
+              ) {
+                return localName;
+              }
+
+              const match = context.resourcePath.match(/src(.*)/);
+              console.log(match)
+              if (match && match[1]) {
+                const pathname = match[1].replace('.less', '');
+                const name = pathname.split('\\').join('-');
+                return `leetcode${name}-${localName}`;
+              }
+              return localName;
+            },
+          },
+        },
       },
       {
         // Options for PostCSS as we reference these options twice
