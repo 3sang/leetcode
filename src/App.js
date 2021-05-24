@@ -3,7 +3,7 @@
  * Author       : Saraku.
  * Date         : 2021-05-21 20:16:44
  * LastEditors  : Saraku.
- * LastEditTime : 2021-05-23 10:35:49
+ * LastEditTime : 2021-05-24 18:59:34
  */
 
 import React,{useState} from "react";
@@ -41,6 +41,10 @@ function App() {
             <SubMenu key="array" title="数组">
               <Menu.Item key="array-0">首页</Menu.Item>
               <Menu.Item key="array-1">只出现过一次的数</Menu.Item>
+              <Menu.Item key="array-2">出现最多的数</Menu.Item>
+              <SubMenu key="matrix-array" title="二维数组">
+                <Menu.Item key="array-3">搜索二维矩阵 II</Menu.Item>
+              </SubMenu>
             </SubMenu>
             <SubMenu key="tree" title="树">
               <Menu.Item key="tree-0">首页</Menu.Item>
