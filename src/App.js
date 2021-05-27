@@ -1,23 +1,23 @@
 /*
- * Description  : 首页.分为list(链表)、array(数组)、tree(树)、stack(栈)、queue(队列)
+ * Description  : 首页.分为list(链表)、array(数组)、tree(树)、stack(栈)、queue(队列)、string(字符串)
  * Author       : Saraku.
  * Date         : 2021-05-21 20:16:44
  * LastEditors  : Saraku.
- * LastEditTime : 2021-05-24 18:59:34
+ * LastEditTime : 2021-05-27 21:33:28
  */
 
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styles from "./app.less";
 import { Layout, Menu } from "antd";
 import MarkdownIt from "markdown-it";
-import MenuType from './utils'
+import MenuType from "./utils";
 import Index from "./index.md";
 
 const { SubMenu } = Menu;
 const { Content, Sider } = Layout;
 
 function App() {
-  const [currentMd,setCurrentMd] = useState(Index)
+  const [currentMd, setCurrentMd] = useState(Index);
   const MarkdownContent = new MarkdownIt(/* Markdown-it options */);
 
   const onMenuClick = ({ key }) => {
@@ -42,8 +42,15 @@ function App() {
               <Menu.Item key="array-0">首页</Menu.Item>
               <Menu.Item key="array-1">只出现过一次的数</Menu.Item>
               <Menu.Item key="array-2">出现最多的数</Menu.Item>
+              <Menu.Item key="array-4">合并两个有序数组</Menu.Item>
               <SubMenu key="matrix-array" title="二维数组">
                 <Menu.Item key="array-3">搜索二维矩阵 II</Menu.Item>
+              </SubMenu>
+            </SubMenu>
+            <SubMenu key="string" title="字符串">
+              <Menu.Item key="string-0">首页</Menu.Item>
+              <SubMenu key="huiwen-array" title="回文字符串">
+                <Menu.Item key="string-1">验证回文字符串</Menu.Item>
               </SubMenu>
             </SubMenu>
             <SubMenu key="tree" title="树">
@@ -67,7 +74,7 @@ function App() {
             }}
           >
             <div
-            className={styles.mdPage}
+              className={styles.mdPage}
               dangerouslySetInnerHTML={{
                 __html: MarkdownContent.render(currentMd),
               }}
