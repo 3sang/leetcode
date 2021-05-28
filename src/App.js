@@ -3,7 +3,7 @@
  * Author       : Saraku.
  * Date         : 2021-05-21 20:16:44
  * LastEditors  : Saraku.
- * LastEditTime : 2021-05-27 21:33:28
+ * LastEditTime : 2021-05-28 22:08:28
  */
 
 import React, { useState } from "react";
@@ -51,6 +51,7 @@ function App() {
               <Menu.Item key="string-0">首页</Menu.Item>
               <SubMenu key="huiwen-array" title="回文字符串">
                 <Menu.Item key="string-1">验证回文字符串</Menu.Item>
+                <Menu.Item key="string-2">分割回文串</Menu.Item>
               </SubMenu>
             </SubMenu>
             <SubMenu key="tree" title="树">
