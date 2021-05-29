@@ -1,6 +1,7 @@
 import Index from "./index.md";
 import Index1 from "./1.md";
 import Index2 from "./2.md";
+import Index3 from "./3.md";
 
 // 选择链表下的题目序列。
 const stringType = (no) => {
@@ -11,6 +12,8 @@ const stringType = (no) => {
       return Index1;
     case "2":
       return Index2;
+    case "3":
+      return Index3;
     default:
       return Index;
   }
