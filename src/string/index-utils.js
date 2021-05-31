@@ -3,6 +3,7 @@ import Index1 from "./1.md";
 import Index2 from "./2.md";
 import Index3 from "./3.md";
 import Index4 from "./4.md";
+import Index5 from "./5.md";
 
 // 选择链表下的题目序列。
 const stringType = (no) => {
@@ -17,6 +18,8 @@ const stringType = (no) => {
       return Index3;
     case "4":
       return Index4;
+    case "5":
+      return Index5;
     default:
       return Index;
   }
