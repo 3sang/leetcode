@@ -3,7 +3,7 @@
  * Author       : Saraku.
  * Date         : 2021-05-21 20:16:44
  * LastEditors  : Saraku.
- * LastEditTime : 2021-06-01 21:06:23
+ * LastEditTime : 2021-06-02 20:48:02
  */
 
 import React, { useState } from "react";
@@ -53,6 +53,7 @@ function App() {
               <Menu.Item key="string-4">单词拆分Ⅱ</Menu.Item>
               <Menu.Item key="string-5">单词搜索Ⅱ</Menu.Item>
               <Menu.Item key="string-6">有效的字母异位词</Menu.Item>
+              <Menu.Item key="string-7">字符串中的第一个唯一字符</Menu.Item>
               <SubMenu key="huiwen-array" title="回文字符串">
                 <Menu.Item key="string-1">验证回文字符串</Menu.Item>
                 <Menu.Item key="string-2">分割回文串</Menu.Item>
