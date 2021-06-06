@@ -3,7 +3,7 @@
  * Author       : Saraku.
  * Date         : 2021-05-21 20:16:44
  * LastEditors  : Saraku.
- * LastEditTime : 2021-06-05 00:11:09
+ * LastEditTime : 2021-06-06 10:16:08
  */
 
 import React, { useState } from "react";
@@ -44,6 +44,7 @@ function App() {
               <Menu.Item key="array-2">出现最多的数</Menu.Item>
               <Menu.Item key="array-4">合并两个有序数组</Menu.Item>
               <Menu.Item key="array-5">合并两个有序数组</Menu.Item>
+              <Menu.Item key="array-6">旋转数组</Menu.Item>
               <SubMenu key="matrix-array" title="二维数组">
                 <Menu.Item key="array-3">搜索二维矩阵 II</Menu.Item>
               </SubMenu>
