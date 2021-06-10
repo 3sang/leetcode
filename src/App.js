@@ -3,7 +3,7 @@
  * Author       : Saraku.
  * Date         : 2021-05-21 20:16:44
  * LastEditors  : Saraku.
- * LastEditTime : 2021-06-09 22:18:21
+ * LastEditTime : 2021-06-10 22:42:20
  */
 
 import React, { useState } from "react";
@@ -48,6 +48,7 @@ function App() {
               <Menu.Item key="array-7">存在重复元素</Menu.Item>
               <Menu.Item key="array-8">移动零</Menu.Item>
               <Menu.Item key="array-9">两个数组的交集Ⅱ</Menu.Item>
+              <Menu.Item key="array-10">除自身以外数组的乘积</Menu.Item>
               <SubMenu key="matrix-array" title="二维数组">
                 <Menu.Item key="array-3">搜索二维矩阵 II</Menu.Item>
               </SubMenu>
