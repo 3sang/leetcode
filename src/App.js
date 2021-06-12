@@ -3,7 +3,7 @@
  * Author       : Saraku.
  * Date         : 2021-05-21 20:16:44
  * LastEditors  : Saraku.
- * LastEditTime : 2021-06-10 22:42:20
+ * LastEditTime : 2021-06-12 21:18:26
  */
 
 import React, { useState } from "react";
@@ -71,6 +71,7 @@ function App() {
             </SubMenu>
             <SubMenu key="stack" title="栈">
               <Menu.Item key="stack-0">首页</Menu.Item>
+              <Menu.Item key="stack-1">最小栈</Menu.Item>
             </SubMenu>
             <SubMenu key="queue" title="队列">
               <Menu.Item key="queue-0">首页</Menu.Item>
